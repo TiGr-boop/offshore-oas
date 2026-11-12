@@ -1,0 +1,13 @@
+{
+  "version": "0.0.7",
+  "device_revision": "0.0.1",
+  "manufacturer": "www.siemens.com",
+  "product_code": "DAC",
+  "pea_information": "be930d08-54eb-4fb8-946d-02d4bebdf115",
+  "web_server_url": "73d427d3-0e80-4156-b19c-cb73d98c0b65",
+  "origin_name": "SIMATIC MTP Creator",
+  "origin_id": "",
+  "origin_version": "4.0.0",
+  "project": "PtX_H2Mare",
+  "last_changes": "2025-03-26T09:13:00+01:00"
+}

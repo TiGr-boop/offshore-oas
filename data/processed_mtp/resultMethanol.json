@@ -1,0 +1,13 @@
+{
+  "version": "0.0.7",
+  "device_revision": "0.0.1",
+  "manufacturer": "www.siemens.com",
+  "product_code": "Methanol",
+  "pea_information": "8d882752-c3c5-4f76-9cd2-431a6bee9d32",
+  "web_server_url": "7a7c052f-d8db-43f1-ac67-9624d9b4e8cc",
+  "origin_name": "SIMATIC MTP Creator",
+  "origin_id": "",
+  "origin_version": "4.0.0",
+  "project": "PtX_H2Mare",
+  "last_changes": "2025-03-26T09:48:00+01:00"
+}

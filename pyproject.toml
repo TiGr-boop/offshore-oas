@@ -1,0 +1,7 @@
+[project]
+name = "offshore-oas"
+version = "0.0.1"
+dependencies = [
+    "lxml",
+    "pathlib",
+]

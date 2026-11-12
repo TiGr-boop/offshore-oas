@@ -1,0 +1,13 @@
+{
+  "version": "0.0.7",
+  "device_revision": "0.0.1",
+  "manufacturer": "www.siemens.com",
+  "product_code": "Meerwasseraufbereitung",
+  "pea_information": "2d81645a-8540-4f0c-aeb5-fcc09fd90f8e",
+  "web_server_url": "976188f4-f015-4c94-8504-4b2b01f4dad0",
+  "origin_name": "SIMATIC MTP Creator",
+  "origin_id": "",
+  "origin_version": "4.0.0",
+  "project": "PtX_H2Mare",
+  "last_changes": "2025-03-26T09:11:00+01:00"
+}

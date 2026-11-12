@@ -1,0 +1,13 @@
+{
+  "version": "0.0.7",
+  "device_revision": "0.0.1",
+  "manufacturer": "www.siemens.com",
+  "product_code": "FTS",
+  "pea_information": "b0e4fa84-53d0-423f-9fc1-4972ba45c5e0",
+  "web_server_url": "3c1d56c3-25f1-421a-a137-d31d91790726",
+  "origin_name": "SIMATIC MTP Creator",
+  "origin_id": "",
+  "origin_version": "4.0.0",
+  "project": "PtX_H2Mare",
+  "last_changes": "2025-03-26T09:41:00+01:00"
+}

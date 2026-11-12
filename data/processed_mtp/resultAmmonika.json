@@ -1,0 +1,13 @@
+{
+  "version": "0.0.7",
+  "device_revision": "0.0.1",
+  "manufacturer": "www.siemens.com",
+  "product_code": "Ammoniak",
+  "pea_information": "f549f5ee-3453-4f67-a984-54322319bc2e",
+  "web_server_url": "bbb03af8-1b55-4e14-af6f-fa4296756954",
+  "origin_name": "SIMATIC MTP Creator",
+  "origin_id": "",
+  "origin_version": "4.0.0",
+  "project": "PtX_H2Mare",
+  "last_changes": "2025-03-26T12:55:00+01:00"
+}

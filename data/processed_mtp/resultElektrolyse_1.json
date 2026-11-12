@@ -1,0 +1,13 @@
+{
+  "version": "0.0.7",
+  "device_revision": "0.0.1",
+  "manufacturer": "www.Siemens.com",
+  "product_code": "Elektrolyse_1",
+  "pea_information": "914079d7-6cbb-41b4-a2d6-7ce585847fe9",
+  "web_server_url": "09450ba9-e524-4bd4-9bcb-aed59d7aaa4e",
+  "origin_name": "SIMATIC MTP Creator",
+  "origin_id": "",
+  "origin_version": "4.0.0",
+  "project": "PtX_H2Mare",
+  "last_changes": "2025-03-26T09:29:00+01:00"
+}
