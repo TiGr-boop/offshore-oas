@@ -39,19 +39,29 @@ def parse_manifest(manifest_path: Path) -> dict:
         "last_changes": src.get("LastWritingDateTime"),
     }
 
-    ### OPC UA Server Information ###
+    ### OPC-UA-Server Information ###
     opcua_servers = []
-    for item in communication.iterfind(".//c:InternalElement", ns_const):
-        if not item.get("RefBaseSystemUnitPath").endswith("ServerAssembly/OPCUAServer"):
+    for ie in communication.iterfind(".//c:InternalElement", ns_const):
+        external_interfaces = []
+        if not ie.get("RefBaseSystemUnitPath").endswith("ServerAssembly/OPCUAServer"):
             continue
+        
+        for ei in ie.iterfind(".//c:ExternalInterface", ns_const):
+            external_interfaces.append({
+                "name": ei.get("Name"),
+                "identifier": get_attribute_value(ei, "Identifier", ns_const),
+            })
+
         server_info = {
-            "name": item.get("Name"),
-            "description": item.findtext("c:Description", namespaces=ns_const),
-            "endpoint": get_attribute_value(item, "Endpoint", ns_const),
-            "max_sessions": get_attribute_value(item, "MaxSessions", ns_const),
-        }
+                    "name": ie.get("Name"),
+                    "description": ie.findtext("c:Description", namespaces=ns_const),
+                    "endpoint": get_attribute_value(ie, "Endpoint", ns_const),
+                    "max_sessions": get_attribute_value(ie, "MaxSessions", ns_const),
+                    "external_interfaces": external_interfaces,
+                }
         opcua_servers.append(server_info)
 
+    
 
     return {
         "pea_info": pea_info,
