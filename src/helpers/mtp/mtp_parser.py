@@ -39,9 +39,21 @@ def parse_manifest(manifest_path: Path) -> dict:
         "last_changes": src.get("LastWritingDateTime"),
     }
 
+    ### OPC UA Server Information ###
     opcua_servers = []
     for item in communication.iterfind(".//c:InternalElement", ns_const):
         if not item.get("RefBaseSystemUnitPath").endswith("ServerAssembly/OPCUAServer"):
             continue
+        server_info = {
+            "name": item.get("Name"),
+            "description": item.findtext("c:Description", namespaces=ns_const),
+            "endpoint": get_attribute_value(item, "Endpoint", ns_const),
+            "max_sessions": get_attribute_value(item, "MaxSessions", ns_const),
+        }
+        opcua_servers.append(server_info)
 
-    return pea_info
+
+    return {
+        "pea_info": pea_info,
+        "opcua_servers": opcua_servers,
+    }

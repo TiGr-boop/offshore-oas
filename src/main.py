@@ -16,10 +16,10 @@ def main():
         module_name = folder.name.removesuffix(".mtp")
 
         manifest_path = folder / "manifest.aml"
-        man = parse_manifest(manifest_path)
+        manifest = parse_manifest(manifest_path)
 
         out = processed_dir / f"{module_name}.json"
-        out.write_text(json.dumps(man, ensure_ascii=False, indent=2), encoding="utf-8")
+        out.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 if __name__ == "__main__":
