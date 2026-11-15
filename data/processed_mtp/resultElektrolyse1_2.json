@@ -1,13 +1,2727 @@
 {
-  "version": "0.0.7",
-  "device_revision": "0.0.1",
-  "manufacturer": "www.Siemens.com",
-  "product_code": "Elektrolyse_1",
-  "pea_information": "157faa6f-e3a9-4ba4-84f2-742e82ea67b5",
-  "web_server_url": "96c181ab-dc11-4b44-a73f-ed543fc23a5c",
-  "origin_name": "SIMATIC MTP Creator",
-  "origin_id": "",
-  "origin_version": "4.0.0",
-  "project": "PtX_H2Mare",
-  "last_changes": "2026-04-13T15:36:00+02:00"
+  "pea_info": {
+    "version": "0.0.7",
+    "device_revision": "0.0.1",
+    "manufacturer": "www.Siemens.com",
+    "product_code": "Elektrolyse_1",
+    "pea_information": "157faa6f-e3a9-4ba4-84f2-742e82ea67b5",
+    "web_server_url": "96c181ab-dc11-4b44-a73f-ed543fc23a5c",
+    "origin_name": "SIMATIC MTP Creator",
+    "origin_id": "",
+    "origin_version": "4.0.0",
+    "project": "PtX_H2Mare",
+    "last_changes": "2026-04-13T15:36:00+02:00"
+  },
+  "opcua_servers": [
+    {
+      "name": "PNK_04_Elektrolyse_1",
+      "description": "SIMATIC.S7-1500.OPC-UA.Application:PNK_04_Elektrolyse_1",
+      "endpoint": "opc.tcp://192.168.21.14:4840",
+      "max_sessions": "1"
+    }
+  ],
+  "data_assemblies": [
+    {
+      "name": "WebServerUrlInfo",
+      "type": "MTPDataObjectSUCLib/DataAssembly/PeaElement/WebServerUrlInfo",
+      "signals": {}
+    },
+    {
+      "name": "G4002",
+      "type": "MTPDataObjectSUCLib/DataAssembly/OperationElement/BinMan/BinManInt",
+      "signals": {
+        "OSLevel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G4002\".\"MTP_BinManInt\".\"OSLevel\""
+        },
+        "VState0": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G4002\".\"MTP_BinManInt\".\"VState0\""
+        },
+        "VState1": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G4002\".\"MTP_BinManInt\".\"VState1\""
+        },
+        "VOut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G4002\".\"MTP_BinManInt\".\"VOut\""
+        },
+        "VMan": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G4002\".\"MTP_BinManInt\".\"VMan\""
+        },
+        "VRbk": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G4002\".\"MTP_BinManInt\".\"VRbk\""
+        },
+        "VFbk": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G4002\".\"MTP_BinManInt\".\"VFbk\""
+        },
+        "VInt": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G4002\".\"MTP_BinManInt\".\"VInt\""
+        },
+        "SrcChannel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G4002\".\"MTP_BinManInt\".\"SrcChannel\""
+        },
+        "SrcManAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G4002\".\"MTP_BinManInt\".\"SrcManAut\""
+        },
+        "SrcIntAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G4002\".\"MTP_BinManInt\".\"SrcIntAut\""
+        },
+        "SrcIntOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G4002\".\"MTP_BinManInt\".\"SrcIntOp\""
+        },
+        "SrcManOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G4002\".\"MTP_BinManInt\".\"SrcManOp\""
+        },
+        "SrcManAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G4002\".\"MTP_BinManInt\".\"SrcManAct\""
+        },
+        "SrcIntAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G4002\".\"MTP_BinManInt\".\"SrcIntAct\""
+        },
+        "WQC": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G4002\".\"MTP_BinManInt\".\"WQC\""
+        }
+      }
+    },
+    {
+      "name": "Rec_Wind_min",
+      "type": "MTPDataObjectSUCLib/DataAssembly/OperationElement/BinMan/BinManInt",
+      "signals": {
+        "OSLevel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Wind_min\".\"MTP_BinManInt\".\"OSLevel\""
+        },
+        "VState0": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Wind_min\".\"MTP_BinManInt\".\"VState0\""
+        },
+        "VState1": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Wind_min\".\"MTP_BinManInt\".\"VState1\""
+        },
+        "VOut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Wind_min\".\"MTP_BinManInt\".\"VOut\""
+        },
+        "VMan": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Wind_min\".\"MTP_BinManInt\".\"VMan\""
+        },
+        "VRbk": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Wind_min\".\"MTP_BinManInt\".\"VRbk\""
+        },
+        "VFbk": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Wind_min\".\"MTP_BinManInt\".\"VFbk\""
+        },
+        "VInt": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Wind_min\".\"MTP_BinManInt\".\"VInt\""
+        },
+        "SrcChannel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Wind_min\".\"MTP_BinManInt\".\"SrcChannel\""
+        },
+        "SrcManAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Wind_min\".\"MTP_BinManInt\".\"SrcManAut\""
+        },
+        "SrcIntAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Wind_min\".\"MTP_BinManInt\".\"SrcIntAut\""
+        },
+        "SrcIntOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Wind_min\".\"MTP_BinManInt\".\"SrcIntOp\""
+        },
+        "SrcManOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Wind_min\".\"MTP_BinManInt\".\"SrcManOp\""
+        },
+        "SrcManAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Wind_min\".\"MTP_BinManInt\".\"SrcManAct\""
+        },
+        "SrcIntAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Wind_min\".\"MTP_BinManInt\".\"SrcIntAct\""
+        },
+        "WQC": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Wind_min\".\"MTP_BinManInt\".\"WQC\""
+        }
+      }
+    },
+    {
+      "name": "Rec_G4001",
+      "type": "MTPDataObjectSUCLib/DataAssembly/OperationElement/BinMan/BinManInt",
+      "signals": {
+        "OSLevel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G4001\".\"MTP_BinManInt\".\"OSLevel\""
+        },
+        "VState0": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G4001\".\"MTP_BinManInt\".\"VState0\""
+        },
+        "VState1": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G4001\".\"MTP_BinManInt\".\"VState1\""
+        },
+        "VOut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G4001\".\"MTP_BinManInt\".\"VOut\""
+        },
+        "VMan": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G4001\".\"MTP_BinManInt\".\"VMan\""
+        },
+        "VRbk": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G4001\".\"MTP_BinManInt\".\"VRbk\""
+        },
+        "VFbk": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G4001\".\"MTP_BinManInt\".\"VFbk\""
+        },
+        "VInt": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G4001\".\"MTP_BinManInt\".\"VInt\""
+        },
+        "SrcChannel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G4001\".\"MTP_BinManInt\".\"SrcChannel\""
+        },
+        "SrcManAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G4001\".\"MTP_BinManInt\".\"SrcManAut\""
+        },
+        "SrcIntAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G4001\".\"MTP_BinManInt\".\"SrcIntAut\""
+        },
+        "SrcIntOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G4001\".\"MTP_BinManInt\".\"SrcIntOp\""
+        },
+        "SrcManOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G4001\".\"MTP_BinManInt\".\"SrcManOp\""
+        },
+        "SrcManAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G4001\".\"MTP_BinManInt\".\"SrcManAct\""
+        },
+        "SrcIntAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G4001\".\"MTP_BinManInt\".\"SrcIntAct\""
+        },
+        "WQC": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G4001\".\"MTP_BinManInt\".\"WQC\""
+        }
+      }
+    },
+    {
+      "name": "Rec_G1002",
+      "type": "MTPDataObjectSUCLib/DataAssembly/OperationElement/BinMan/BinManInt",
+      "signals": {
+        "OSLevel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1002\".\"MTP_BinManInt\".\"OSLevel\""
+        },
+        "VState0": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1002\".\"MTP_BinManInt\".\"VState0\""
+        },
+        "VState1": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1002\".\"MTP_BinManInt\".\"VState1\""
+        },
+        "VOut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1002\".\"MTP_BinManInt\".\"VOut\""
+        },
+        "VMan": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1002\".\"MTP_BinManInt\".\"VMan\""
+        },
+        "VRbk": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1002\".\"MTP_BinManInt\".\"VRbk\""
+        },
+        "VFbk": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1002\".\"MTP_BinManInt\".\"VFbk\""
+        },
+        "VInt": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1002\".\"MTP_BinManInt\".\"VInt\""
+        },
+        "SrcChannel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1002\".\"MTP_BinManInt\".\"SrcChannel\""
+        },
+        "SrcManAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1002\".\"MTP_BinManInt\".\"SrcManAut\""
+        },
+        "SrcIntAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1002\".\"MTP_BinManInt\".\"SrcIntAut\""
+        },
+        "SrcIntOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1002\".\"MTP_BinManInt\".\"SrcIntOp\""
+        },
+        "SrcManOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1002\".\"MTP_BinManInt\".\"SrcManOp\""
+        },
+        "SrcManAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1002\".\"MTP_BinManInt\".\"SrcManAct\""
+        },
+        "SrcIntAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1002\".\"MTP_BinManInt\".\"SrcIntAct\""
+        },
+        "WQC": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1002\".\"MTP_BinManInt\".\"WQC\""
+        }
+      }
+    },
+    {
+      "name": "Rec_G1001",
+      "type": "MTPDataObjectSUCLib/DataAssembly/OperationElement/BinMan/BinManInt",
+      "signals": {
+        "OSLevel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1001\".\"MTP_BinManInt\".\"OSLevel\""
+        },
+        "VState0": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1001\".\"MTP_BinManInt\".\"VState0\""
+        },
+        "VState1": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1001\".\"MTP_BinManInt\".\"VState1\""
+        },
+        "VOut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1001\".\"MTP_BinManInt\".\"VOut\""
+        },
+        "VMan": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1001\".\"MTP_BinManInt\".\"VMan\""
+        },
+        "VRbk": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1001\".\"MTP_BinManInt\".\"VRbk\""
+        },
+        "VFbk": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1001\".\"MTP_BinManInt\".\"VFbk\""
+        },
+        "VInt": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1001\".\"MTP_BinManInt\".\"VInt\""
+        },
+        "SrcChannel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1001\".\"MTP_BinManInt\".\"SrcChannel\""
+        },
+        "SrcManAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1001\".\"MTP_BinManInt\".\"SrcManAut\""
+        },
+        "SrcIntAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1001\".\"MTP_BinManInt\".\"SrcIntAut\""
+        },
+        "SrcIntOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1001\".\"MTP_BinManInt\".\"SrcIntOp\""
+        },
+        "SrcManOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1001\".\"MTP_BinManInt\".\"SrcManOp\""
+        },
+        "SrcManAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1001\".\"MTP_BinManInt\".\"SrcManAct\""
+        },
+        "SrcIntAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1001\".\"MTP_BinManInt\".\"SrcIntAct\""
+        },
+        "WQC": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_G1001\".\"MTP_BinManInt\".\"WQC\""
+        }
+      }
+    },
+    {
+      "name": "G1002",
+      "type": "MTPDataObjectSUCLib/DataAssembly/IndicatorElement/BinView/BinMon",
+      "signals": {
+        "WQC": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G1002\".\"MTP_BinMon\".\"WQC\""
+        },
+        "V": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G1002\".\"MTP_BinMon\".\"V\""
+        },
+        "VState0": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G1002\".\"MTP_BinMon\".\"VState0\""
+        },
+        "VState1": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G1002\".\"MTP_BinMon\".\"VState1\""
+        },
+        "OSLevel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G1002\".\"MTP_BinMon\".\"OSLevel\""
+        },
+        "VFlutEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G1002\".\"MTP_BinMon\".\"VFlutEn\""
+        },
+        "VFlutTi": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G1002\".\"MTP_BinMon\".\"VFlutTi\""
+        },
+        "VFlutCnt": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G1002\".\"MTP_BinMon\".\"VFlutCnt\""
+        },
+        "VFlutAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G1002\".\"MTP_BinMon\".\"VFlutAct\""
+        }
+      }
+    },
+    {
+      "name": "G1001",
+      "type": "MTPDataObjectSUCLib/DataAssembly/IndicatorElement/BinView/BinMon",
+      "signals": {
+        "WQC": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G1001\".\"MTP_BinMon\".\"WQC\""
+        },
+        "V": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G1001\".\"MTP_BinMon\".\"V\""
+        },
+        "VState0": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G1001\".\"MTP_BinMon\".\"VState0\""
+        },
+        "VState1": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G1001\".\"MTP_BinMon\".\"VState1\""
+        },
+        "OSLevel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G1001\".\"MTP_BinMon\".\"OSLevel\""
+        },
+        "VFlutEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G1001\".\"MTP_BinMon\".\"VFlutEn\""
+        },
+        "VFlutTi": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G1001\".\"MTP_BinMon\".\"VFlutTi\""
+        },
+        "VFlutCnt": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G1001\".\"MTP_BinMon\".\"VFlutCnt\""
+        },
+        "VFlutAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"G1001\".\"MTP_BinMon\".\"VFlutAct\""
+        }
+      }
+    },
+    {
+      "name": "Standby_Betrieb",
+      "type": "MTPDataObjectSUCLib/DataAssembly/IndicatorElement/BinView/BinMon",
+      "signals": {
+        "WQC": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Standby_Betrieb\".\"MTP_BinMon\".\"WQC\""
+        },
+        "V": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Standby_Betrieb\".\"MTP_BinMon\".\"V\""
+        },
+        "VState0": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Standby_Betrieb\".\"MTP_BinMon\".\"VState0\""
+        },
+        "VState1": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Standby_Betrieb\".\"MTP_BinMon\".\"VState1\""
+        },
+        "OSLevel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Standby_Betrieb\".\"MTP_BinMon\".\"OSLevel\""
+        },
+        "VFlutEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Standby_Betrieb\".\"MTP_BinMon\".\"VFlutEn\""
+        },
+        "VFlutTi": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Standby_Betrieb\".\"MTP_BinMon\".\"VFlutTi\""
+        },
+        "VFlutCnt": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Standby_Betrieb\".\"MTP_BinMon\".\"VFlutCnt\""
+        },
+        "VFlutAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Standby_Betrieb\".\"MTP_BinMon\".\"VFlutAct\""
+        }
+      }
+    },
+    {
+      "name": "Störung Elektrolyse 1",
+      "type": "MTPDataObjectSUCLib/DataAssembly/IndicatorElement/BinView/BinMon",
+      "signals": {
+        "WQC": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Störung Elektrolyse 1\".\"MTP_BinMon\".\"WQC\""
+        },
+        "V": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Störung Elektrolyse 1\".\"MTP_BinMon\".\"V\""
+        },
+        "VState0": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Störung Elektrolyse 1\".\"MTP_BinMon\".\"VState0\""
+        },
+        "VState1": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Störung Elektrolyse 1\".\"MTP_BinMon\".\"VState1\""
+        },
+        "OSLevel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Störung Elektrolyse 1\".\"MTP_BinMon\".\"OSLevel\""
+        },
+        "VFlutEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Störung Elektrolyse 1\".\"MTP_BinMon\".\"VFlutEn\""
+        },
+        "VFlutTi": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Störung Elektrolyse 1\".\"MTP_BinMon\".\"VFlutTi\""
+        },
+        "VFlutCnt": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Störung Elektrolyse 1\".\"MTP_BinMon\".\"VFlutCnt\""
+        },
+        "VFlutAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Störung Elektrolyse 1\".\"MTP_BinMon\".\"VFlutAct\""
+        }
+      }
+    },
+    {
+      "name": "T4002",
+      "type": "MTPDataObjectSUCLib/DataAssembly/IndicatorElement/AnaView/AnaMon",
+      "signals": {
+        "WQC": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4002\".\"MTP_AnaMon\".\"WQC\""
+        },
+        "VSclMin": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4002\".\"MTP_AnaMon\".\"VSclMin\""
+        },
+        "VSclMax": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4002\".\"MTP_AnaMon\".\"VSclMax\""
+        },
+        "VUnit": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4002\".\"MTP_AnaMon\".\"VUnit\""
+        },
+        "V": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4002\".\"MTP_AnaMon\".\"V\""
+        },
+        "OSLevel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4002\".\"MTP_AnaMon\".\"OSLevel\""
+        },
+        "VAHEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4002\".\"MTP_AnaMon\".\"VAHEn\""
+        },
+        "VAHLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4002\".\"MTP_AnaMon\".\"VAHLim\""
+        },
+        "VAHAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4002\".\"MTP_AnaMon\".\"VAHAct\""
+        },
+        "VWHEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4002\".\"MTP_AnaMon\".\"VWHEn\""
+        },
+        "VWHLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4002\".\"MTP_AnaMon\".\"VWHLim\""
+        },
+        "VWHAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4002\".\"MTP_AnaMon\".\"VWHAct\""
+        },
+        "VTHEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4002\".\"MTP_AnaMon\".\"VTHEn\""
+        },
+        "VTHLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4002\".\"MTP_AnaMon\".\"VTHLim\""
+        },
+        "VTHAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4002\".\"MTP_AnaMon\".\"VTHAct\""
+        },
+        "VTLEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4002\".\"MTP_AnaMon\".\"VTLEn\""
+        },
+        "VTLLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4002\".\"MTP_AnaMon\".\"VTLLim\""
+        },
+        "VTLAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4002\".\"MTP_AnaMon\".\"VTLAct\""
+        },
+        "VWLEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4002\".\"MTP_AnaMon\".\"VWLEn\""
+        },
+        "VWLLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4002\".\"MTP_AnaMon\".\"VWLLim\""
+        },
+        "VWLAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4002\".\"MTP_AnaMon\".\"VWLAct\""
+        },
+        "VALEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4002\".\"MTP_AnaMon\".\"VALEn\""
+        },
+        "VALLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4002\".\"MTP_AnaMon\".\"VALLim\""
+        },
+        "VALAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4002\".\"MTP_AnaMon\".\"VALAct\""
+        }
+      }
+    },
+    {
+      "name": "T4001",
+      "type": "MTPDataObjectSUCLib/DataAssembly/IndicatorElement/AnaView/AnaMon",
+      "signals": {
+        "WQC": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4001\".\"MTP_AnaMon\".\"WQC\""
+        },
+        "VSclMin": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4001\".\"MTP_AnaMon\".\"VSclMin\""
+        },
+        "VSclMax": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4001\".\"MTP_AnaMon\".\"VSclMax\""
+        },
+        "VUnit": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4001\".\"MTP_AnaMon\".\"VUnit\""
+        },
+        "V": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4001\".\"MTP_AnaMon\".\"V\""
+        },
+        "OSLevel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4001\".\"MTP_AnaMon\".\"OSLevel\""
+        },
+        "VAHEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4001\".\"MTP_AnaMon\".\"VAHEn\""
+        },
+        "VAHLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4001\".\"MTP_AnaMon\".\"VAHLim\""
+        },
+        "VAHAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4001\".\"MTP_AnaMon\".\"VAHAct\""
+        },
+        "VWHEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4001\".\"MTP_AnaMon\".\"VWHEn\""
+        },
+        "VWHLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4001\".\"MTP_AnaMon\".\"VWHLim\""
+        },
+        "VWHAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4001\".\"MTP_AnaMon\".\"VWHAct\""
+        },
+        "VTHEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4001\".\"MTP_AnaMon\".\"VTHEn\""
+        },
+        "VTHLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4001\".\"MTP_AnaMon\".\"VTHLim\""
+        },
+        "VTHAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4001\".\"MTP_AnaMon\".\"VTHAct\""
+        },
+        "VTLEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4001\".\"MTP_AnaMon\".\"VTLEn\""
+        },
+        "VTLLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4001\".\"MTP_AnaMon\".\"VTLLim\""
+        },
+        "VTLAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4001\".\"MTP_AnaMon\".\"VTLAct\""
+        },
+        "VWLEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4001\".\"MTP_AnaMon\".\"VWLEn\""
+        },
+        "VWLLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4001\".\"MTP_AnaMon\".\"VWLLim\""
+        },
+        "VWLAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4001\".\"MTP_AnaMon\".\"VWLAct\""
+        },
+        "VALEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4001\".\"MTP_AnaMon\".\"VALEn\""
+        },
+        "VALLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4001\".\"MTP_AnaMon\".\"VALLim\""
+        },
+        "VALAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"T4001\".\"MTP_AnaMon\".\"VALAct\""
+        }
+      }
+    },
+    {
+      "name": "P4002",
+      "type": "MTPDataObjectSUCLib/DataAssembly/IndicatorElement/AnaView/AnaMon",
+      "signals": {
+        "WQC": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4002\".\"MTP_AnaMon\".\"WQC\""
+        },
+        "VSclMin": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4002\".\"MTP_AnaMon\".\"VSclMin\""
+        },
+        "VSclMax": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4002\".\"MTP_AnaMon\".\"VSclMax\""
+        },
+        "VUnit": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4002\".\"MTP_AnaMon\".\"VUnit\""
+        },
+        "V": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4002\".\"MTP_AnaMon\".\"V\""
+        },
+        "OSLevel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4002\".\"MTP_AnaMon\".\"OSLevel\""
+        },
+        "VAHEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4002\".\"MTP_AnaMon\".\"VAHEn\""
+        },
+        "VAHLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4002\".\"MTP_AnaMon\".\"VAHLim\""
+        },
+        "VAHAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4002\".\"MTP_AnaMon\".\"VAHAct\""
+        },
+        "VWHEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4002\".\"MTP_AnaMon\".\"VWHEn\""
+        },
+        "VWHLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4002\".\"MTP_AnaMon\".\"VWHLim\""
+        },
+        "VWHAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4002\".\"MTP_AnaMon\".\"VWHAct\""
+        },
+        "VTHEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4002\".\"MTP_AnaMon\".\"VTHEn\""
+        },
+        "VTHLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4002\".\"MTP_AnaMon\".\"VTHLim\""
+        },
+        "VTHAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4002\".\"MTP_AnaMon\".\"VTHAct\""
+        },
+        "VTLEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4002\".\"MTP_AnaMon\".\"VTLEn\""
+        },
+        "VTLLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4002\".\"MTP_AnaMon\".\"VTLLim\""
+        },
+        "VTLAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4002\".\"MTP_AnaMon\".\"VTLAct\""
+        },
+        "VWLEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4002\".\"MTP_AnaMon\".\"VWLEn\""
+        },
+        "VWLLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4002\".\"MTP_AnaMon\".\"VWLLim\""
+        },
+        "VWLAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4002\".\"MTP_AnaMon\".\"VWLAct\""
+        },
+        "VALEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4002\".\"MTP_AnaMon\".\"VALEn\""
+        },
+        "VALLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4002\".\"MTP_AnaMon\".\"VALLim\""
+        },
+        "VALAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4002\".\"MTP_AnaMon\".\"VALAct\""
+        }
+      }
+    },
+    {
+      "name": "P4001",
+      "type": "MTPDataObjectSUCLib/DataAssembly/IndicatorElement/AnaView/AnaMon",
+      "signals": {
+        "WQC": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4001\".\"MTP_AnaMon\".\"WQC\""
+        },
+        "VSclMin": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4001\".\"MTP_AnaMon\".\"VSclMin\""
+        },
+        "VSclMax": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4001\".\"MTP_AnaMon\".\"VSclMax\""
+        },
+        "VUnit": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4001\".\"MTP_AnaMon\".\"VUnit\""
+        },
+        "V": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4001\".\"MTP_AnaMon\".\"V\""
+        },
+        "OSLevel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4001\".\"MTP_AnaMon\".\"OSLevel\""
+        },
+        "VAHEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4001\".\"MTP_AnaMon\".\"VAHEn\""
+        },
+        "VAHLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4001\".\"MTP_AnaMon\".\"VAHLim\""
+        },
+        "VAHAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4001\".\"MTP_AnaMon\".\"VAHAct\""
+        },
+        "VWHEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4001\".\"MTP_AnaMon\".\"VWHEn\""
+        },
+        "VWHLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4001\".\"MTP_AnaMon\".\"VWHLim\""
+        },
+        "VWHAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4001\".\"MTP_AnaMon\".\"VWHAct\""
+        },
+        "VTHEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4001\".\"MTP_AnaMon\".\"VTHEn\""
+        },
+        "VTHLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4001\".\"MTP_AnaMon\".\"VTHLim\""
+        },
+        "VTHAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4001\".\"MTP_AnaMon\".\"VTHAct\""
+        },
+        "VTLEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4001\".\"MTP_AnaMon\".\"VTLEn\""
+        },
+        "VTLLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4001\".\"MTP_AnaMon\".\"VTLLim\""
+        },
+        "VTLAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4001\".\"MTP_AnaMon\".\"VTLAct\""
+        },
+        "VWLEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4001\".\"MTP_AnaMon\".\"VWLEn\""
+        },
+        "VWLLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4001\".\"MTP_AnaMon\".\"VWLLim\""
+        },
+        "VWLAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4001\".\"MTP_AnaMon\".\"VWLAct\""
+        },
+        "VALEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4001\".\"MTP_AnaMon\".\"VALEn\""
+        },
+        "VALLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4001\".\"MTP_AnaMon\".\"VALLim\""
+        },
+        "VALAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"P4001\".\"MTP_AnaMon\".\"VALAct\""
+        }
+      }
+    },
+    {
+      "name": "L4001",
+      "type": "MTPDataObjectSUCLib/DataAssembly/IndicatorElement/AnaView/AnaMon",
+      "signals": {
+        "WQC": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"L4001\".\"MTP_AnaMon\".\"WQC\""
+        },
+        "VSclMin": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"L4001\".\"MTP_AnaMon\".\"VSclMin\""
+        },
+        "VSclMax": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"L4001\".\"MTP_AnaMon\".\"VSclMax\""
+        },
+        "VUnit": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"L4001\".\"MTP_AnaMon\".\"VUnit\""
+        },
+        "V": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"L4001\".\"MTP_AnaMon\".\"V\""
+        },
+        "OSLevel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"L4001\".\"MTP_AnaMon\".\"OSLevel\""
+        },
+        "VAHEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"L4001\".\"MTP_AnaMon\".\"VAHEn\""
+        },
+        "VAHLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"L4001\".\"MTP_AnaMon\".\"VAHLim\""
+        },
+        "VAHAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"L4001\".\"MTP_AnaMon\".\"VAHAct\""
+        },
+        "VWHEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"L4001\".\"MTP_AnaMon\".\"VWHEn\""
+        },
+        "VWHLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"L4001\".\"MTP_AnaMon\".\"VWHLim\""
+        },
+        "VWHAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"L4001\".\"MTP_AnaMon\".\"VWHAct\""
+        },
+        "VTHEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"L4001\".\"MTP_AnaMon\".\"VTHEn\""
+        },
+        "VTHLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"L4001\".\"MTP_AnaMon\".\"VTHLim\""
+        },
+        "VTHAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"L4001\".\"MTP_AnaMon\".\"VTHAct\""
+        },
+        "VTLEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"L4001\".\"MTP_AnaMon\".\"VTLEn\""
+        },
+        "VTLLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"L4001\".\"MTP_AnaMon\".\"VTLLim\""
+        },
+        "VTLAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"L4001\".\"MTP_AnaMon\".\"VTLAct\""
+        },
+        "VWLEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"L4001\".\"MTP_AnaMon\".\"VWLEn\""
+        },
+        "VWLLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"L4001\".\"MTP_AnaMon\".\"VWLLim\""
+        },
+        "VWLAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"L4001\".\"MTP_AnaMon\".\"VWLAct\""
+        },
+        "VALEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"L4001\".\"MTP_AnaMon\".\"VALEn\""
+        },
+        "VALLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"L4001\".\"MTP_AnaMon\".\"VALLim\""
+        },
+        "VALAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"L4001\".\"MTP_AnaMon\".\"VALAct\""
+        }
+      }
+    },
+    {
+      "name": "F4002",
+      "type": "MTPDataObjectSUCLib/DataAssembly/IndicatorElement/AnaView/AnaMon",
+      "signals": {
+        "WQC": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4002\".\"MTP_AnaMon\".\"WQC\""
+        },
+        "VSclMin": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4002\".\"MTP_AnaMon\".\"VSclMin\""
+        },
+        "VSclMax": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4002\".\"MTP_AnaMon\".\"VSclMax\""
+        },
+        "VUnit": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4002\".\"MTP_AnaMon\".\"VUnit\""
+        },
+        "V": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4002\".\"MTP_AnaMon\".\"V\""
+        },
+        "OSLevel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4002\".\"MTP_AnaMon\".\"OSLevel\""
+        },
+        "VAHEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4002\".\"MTP_AnaMon\".\"VAHEn\""
+        },
+        "VAHLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4002\".\"MTP_AnaMon\".\"VAHLim\""
+        },
+        "VAHAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4002\".\"MTP_AnaMon\".\"VAHAct\""
+        },
+        "VWHEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4002\".\"MTP_AnaMon\".\"VWHEn\""
+        },
+        "VWHLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4002\".\"MTP_AnaMon\".\"VWHLim\""
+        },
+        "VWHAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4002\".\"MTP_AnaMon\".\"VWHAct\""
+        },
+        "VTHEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4002\".\"MTP_AnaMon\".\"VTHEn\""
+        },
+        "VTHLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4002\".\"MTP_AnaMon\".\"VTHLim\""
+        },
+        "VTHAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4002\".\"MTP_AnaMon\".\"VTHAct\""
+        },
+        "VTLEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4002\".\"MTP_AnaMon\".\"VTLEn\""
+        },
+        "VTLLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4002\".\"MTP_AnaMon\".\"VTLLim\""
+        },
+        "VTLAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4002\".\"MTP_AnaMon\".\"VTLAct\""
+        },
+        "VWLEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4002\".\"MTP_AnaMon\".\"VWLEn\""
+        },
+        "VWLLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4002\".\"MTP_AnaMon\".\"VWLLim\""
+        },
+        "VWLAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4002\".\"MTP_AnaMon\".\"VWLAct\""
+        },
+        "VALEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4002\".\"MTP_AnaMon\".\"VALEn\""
+        },
+        "VALLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4002\".\"MTP_AnaMon\".\"VALLim\""
+        },
+        "VALAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4002\".\"MTP_AnaMon\".\"VALAct\""
+        }
+      }
+    },
+    {
+      "name": "F4001",
+      "type": "MTPDataObjectSUCLib/DataAssembly/IndicatorElement/AnaView/AnaMon",
+      "signals": {
+        "WQC": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4001\".\"MTP_AnaMon\".\"WQC\""
+        },
+        "VSclMin": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4001\".\"MTP_AnaMon\".\"VSclMin\""
+        },
+        "VSclMax": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4001\".\"MTP_AnaMon\".\"VSclMax\""
+        },
+        "VUnit": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4001\".\"MTP_AnaMon\".\"VUnit\""
+        },
+        "V": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4001\".\"MTP_AnaMon\".\"V\""
+        },
+        "OSLevel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4001\".\"MTP_AnaMon\".\"OSLevel\""
+        },
+        "VAHEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4001\".\"MTP_AnaMon\".\"VAHEn\""
+        },
+        "VAHLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4001\".\"MTP_AnaMon\".\"VAHLim\""
+        },
+        "VAHAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4001\".\"MTP_AnaMon\".\"VAHAct\""
+        },
+        "VWHEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4001\".\"MTP_AnaMon\".\"VWHEn\""
+        },
+        "VWHLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4001\".\"MTP_AnaMon\".\"VWHLim\""
+        },
+        "VWHAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4001\".\"MTP_AnaMon\".\"VWHAct\""
+        },
+        "VTHEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4001\".\"MTP_AnaMon\".\"VTHEn\""
+        },
+        "VTHLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4001\".\"MTP_AnaMon\".\"VTHLim\""
+        },
+        "VTHAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4001\".\"MTP_AnaMon\".\"VTHAct\""
+        },
+        "VTLEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4001\".\"MTP_AnaMon\".\"VTLEn\""
+        },
+        "VTLLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4001\".\"MTP_AnaMon\".\"VTLLim\""
+        },
+        "VTLAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4001\".\"MTP_AnaMon\".\"VTLAct\""
+        },
+        "VWLEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4001\".\"MTP_AnaMon\".\"VWLEn\""
+        },
+        "VWLLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4001\".\"MTP_AnaMon\".\"VWLLim\""
+        },
+        "VWLAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4001\".\"MTP_AnaMon\".\"VWLAct\""
+        },
+        "VALEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4001\".\"MTP_AnaMon\".\"VALEn\""
+        },
+        "VALLim": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4001\".\"MTP_AnaMon\".\"VALLim\""
+        },
+        "VALAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"F4001\".\"MTP_AnaMon\".\"VALAct\""
+        }
+      }
+    },
+    {
+      "name": "PeaInformationLabel",
+      "type": "MTPDataObjectSUCLib/DataAssembly/PeaElement/PeaInformationLabel",
+      "signals": {
+        "AssetId": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"PeaInformationLabel\".\"AssetId\""
+        },
+        "ComponentName": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"PeaInformationLabel\".\"ComponentName\""
+        },
+        "DeviceClass": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"PeaInformationLabel\".\"DeviceClass\""
+        },
+        "DeviceHealth": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"PeaInformationLabel\".\"DeviceHealth\""
+        },
+        "DeviceManual": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"PeaInformationLabel\".\"DeviceManual\""
+        },
+        "DeviceRevision": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"PeaInformationLabel\".\"DeviceRevision\""
+        },
+        "HardwareRevision": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"PeaInformationLabel\".\"HardwareRevision\""
+        },
+        "Manufacturer": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"PeaInformationLabel\".\"Manufacturer\""
+        },
+        "ManufacturerUri": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"PeaInformationLabel\".\"ManufacturerUri\""
+        },
+        "Model": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"PeaInformationLabel\".\"Model\""
+        },
+        "ProductCode": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"PeaInformationLabel\".\"ProductCode\""
+        },
+        "ProductInstanceUri": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"PeaInformationLabel\".\"ProductInstanceUri\""
+        },
+        "RevisionCounter": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"PeaInformationLabel\".\"RevisionCounter\""
+        },
+        "SerialNumber": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"PeaInformationLabel\".\"SerialNumber\""
+        },
+        "SoftwareRevision": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"PeaInformationLabel\".\"SoftwareRevision\""
+        }
+      }
+    },
+    {
+      "name": "NP4003",
+      "type": "MTPDataObjectSUCLib/DataAssembly/ActiveElement/BinDrv/MonBinDrv",
+      "signals": {
+        "OSLevel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"OSLevel\""
+        },
+        "WQC": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"WQC\""
+        },
+        "StateChannel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"StateChannel\""
+        },
+        "StateOffAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"StateOffAut\""
+        },
+        "StateOpAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"StateOpAut\""
+        },
+        "StateAutAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"StateAutAut\""
+        },
+        "StateOffOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"StateOffOp\""
+        },
+        "StateOpOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"StateOpOp\""
+        },
+        "StateAutOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"StateAutOp\""
+        },
+        "StateOpAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"StateOpAct\""
+        },
+        "StateAutAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"StateAutAct\""
+        },
+        "StateOffAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"StateOffAct\""
+        },
+        "FwdEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"FwdEn\""
+        },
+        "RevEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"RevEn\""
+        },
+        "SafePos": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"SafePos\""
+        },
+        "SafePosAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"SafePosAct\""
+        },
+        "StopOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"StopOp\""
+        },
+        "FwdOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"FwdOp\""
+        },
+        "RevOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"RevOp\""
+        },
+        "StopAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"StopAut\""
+        },
+        "FwdAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"FwdAut\""
+        },
+        "RevAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"RevAut\""
+        },
+        "FwdCtrl": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"FwdCtrl\""
+        },
+        "RevCtrl": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"RevCtrl\""
+        },
+        "RevFbkCalc": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"RevFbkCalc\""
+        },
+        "FwdFbkCalc": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"FwdFbkCalc\""
+        },
+        "FwdFbk": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"FwdFbk\""
+        },
+        "RevFbk": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"RevFbk\""
+        },
+        "Trip": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"Trip\""
+        },
+        "PermEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"PermEn\""
+        },
+        "Permit": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"Permit\""
+        },
+        "IntlEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"IntlEn\""
+        },
+        "Interlock": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"Interlock\""
+        },
+        "ProtEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"ProtEn\""
+        },
+        "Protect": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"Protect\""
+        },
+        "ResetOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"ResetOp\""
+        },
+        "ResetAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"ResetAut\""
+        },
+        "MonEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"MonEn\""
+        },
+        "MonSafePos": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"MonSafePos\""
+        },
+        "MonStatErr": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"MonStatErr\""
+        },
+        "MonDynErr": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"MonDynErr\""
+        },
+        "MonStatTi": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"MonStatTi\""
+        },
+        "MonDynTi": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4003\".\"MTP_MonBinDrv\".\"MonDynTi\""
+        }
+      }
+    },
+    {
+      "name": "NP4002",
+      "type": "MTPDataObjectSUCLib/DataAssembly/ActiveElement/BinDrv/MonBinDrv",
+      "signals": {
+        "OSLevel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"OSLevel\""
+        },
+        "WQC": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"WQC\""
+        },
+        "StateChannel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"StateChannel\""
+        },
+        "StateOffAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"StateOffAut\""
+        },
+        "StateOpAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"StateOpAut\""
+        },
+        "StateAutAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"StateAutAut\""
+        },
+        "StateOffOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"StateOffOp\""
+        },
+        "StateOpOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"StateOpOp\""
+        },
+        "StateAutOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"StateAutOp\""
+        },
+        "StateOpAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"StateOpAct\""
+        },
+        "StateAutAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"StateAutAct\""
+        },
+        "StateOffAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"StateOffAct\""
+        },
+        "FwdEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"FwdEn\""
+        },
+        "RevEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"RevEn\""
+        },
+        "SafePos": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"SafePos\""
+        },
+        "SafePosAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"SafePosAct\""
+        },
+        "StopOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"StopOp\""
+        },
+        "FwdOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"FwdOp\""
+        },
+        "RevOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"RevOp\""
+        },
+        "StopAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"StopAut\""
+        },
+        "FwdAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"FwdAut\""
+        },
+        "RevAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"RevAut\""
+        },
+        "FwdCtrl": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"FwdCtrl\""
+        },
+        "RevCtrl": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"RevCtrl\""
+        },
+        "RevFbkCalc": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"RevFbkCalc\""
+        },
+        "FwdFbkCalc": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"FwdFbkCalc\""
+        },
+        "FwdFbk": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"FwdFbk\""
+        },
+        "RevFbk": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"RevFbk\""
+        },
+        "Trip": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"Trip\""
+        },
+        "PermEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"PermEn\""
+        },
+        "Permit": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"Permit\""
+        },
+        "IntlEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"IntlEn\""
+        },
+        "Interlock": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"Interlock\""
+        },
+        "ProtEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"ProtEn\""
+        },
+        "Protect": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"Protect\""
+        },
+        "ResetOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"ResetOp\""
+        },
+        "ResetAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"ResetAut\""
+        },
+        "MonEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"MonEn\""
+        },
+        "MonSafePos": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"MonSafePos\""
+        },
+        "MonStatErr": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"MonStatErr\""
+        },
+        "MonDynErr": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"MonDynErr\""
+        },
+        "MonStatTi": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"MonStatTi\""
+        },
+        "MonDynTi": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4002\".\"MTP_MonBinDrv\".\"MonDynTi\""
+        }
+      }
+    },
+    {
+      "name": "NP4001",
+      "type": "MTPDataObjectSUCLib/DataAssembly/ActiveElement/BinDrv/MonBinDrv",
+      "signals": {
+        "OSLevel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"OSLevel\""
+        },
+        "WQC": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"WQC\""
+        },
+        "StateChannel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"StateChannel\""
+        },
+        "StateOffAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"StateOffAut\""
+        },
+        "StateOpAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"StateOpAut\""
+        },
+        "StateAutAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"StateAutAut\""
+        },
+        "StateOffOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"StateOffOp\""
+        },
+        "StateOpOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"StateOpOp\""
+        },
+        "StateAutOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"StateAutOp\""
+        },
+        "StateOpAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"StateOpAct\""
+        },
+        "StateAutAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"StateAutAct\""
+        },
+        "StateOffAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"StateOffAct\""
+        },
+        "FwdEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"FwdEn\""
+        },
+        "RevEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"RevEn\""
+        },
+        "SafePos": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"SafePos\""
+        },
+        "SafePosAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"SafePosAct\""
+        },
+        "StopOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"StopOp\""
+        },
+        "FwdOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"FwdOp\""
+        },
+        "RevOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"RevOp\""
+        },
+        "StopAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"StopAut\""
+        },
+        "FwdAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"FwdAut\""
+        },
+        "RevAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"RevAut\""
+        },
+        "FwdCtrl": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"FwdCtrl\""
+        },
+        "RevCtrl": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"RevCtrl\""
+        },
+        "RevFbkCalc": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"RevFbkCalc\""
+        },
+        "FwdFbkCalc": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"FwdFbkCalc\""
+        },
+        "FwdFbk": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"FwdFbk\""
+        },
+        "RevFbk": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"RevFbk\""
+        },
+        "Trip": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"Trip\""
+        },
+        "PermEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"PermEn\""
+        },
+        "Permit": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"Permit\""
+        },
+        "IntlEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"IntlEn\""
+        },
+        "Interlock": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"Interlock\""
+        },
+        "ProtEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"ProtEn\""
+        },
+        "Protect": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"Protect\""
+        },
+        "ResetOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"ResetOp\""
+        },
+        "ResetAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"ResetAut\""
+        },
+        "MonEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"MonEn\""
+        },
+        "MonSafePos": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"MonSafePos\""
+        },
+        "MonStatErr": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"MonStatErr\""
+        },
+        "MonDynErr": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"MonDynErr\""
+        },
+        "MonStatTi": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"MonStatTi\""
+        },
+        "MonDynTi": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"NP4001\".\"MTP_MonBinDrv\".\"MonDynTi\""
+        }
+      }
+    },
+    {
+      "name": "Rec_Windgeschwindigkeit_in_prot",
+      "type": "MTPDataObjectSUCLib/DataAssembly/OperationElement/AnaMan/AnaManInt",
+      "signals": {
+        "OSLevel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Windgeschwindigkeit_in_prot\".\"MTP_AnaManInt\".\"OSLevel\""
+        },
+        "VOut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Windgeschwindigkeit_in_prot\".\"MTP_AnaManInt\".\"VOut\""
+        },
+        "VSclMin": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Windgeschwindigkeit_in_prot\".\"MTP_AnaManInt\".\"VSclMin\""
+        },
+        "VSclMax": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Windgeschwindigkeit_in_prot\".\"MTP_AnaManInt\".\"VSclMax\""
+        },
+        "VUnit": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Windgeschwindigkeit_in_prot\".\"MTP_AnaManInt\".\"VUnit\""
+        },
+        "VMan": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Windgeschwindigkeit_in_prot\".\"MTP_AnaManInt\".\"VMan\""
+        },
+        "VMin": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Windgeschwindigkeit_in_prot\".\"MTP_AnaManInt\".\"VMin\""
+        },
+        "VMax": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Windgeschwindigkeit_in_prot\".\"MTP_AnaManInt\".\"VMax\""
+        },
+        "VRbk": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Windgeschwindigkeit_in_prot\".\"MTP_AnaManInt\".\"VRbk\""
+        },
+        "VFbk": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Windgeschwindigkeit_in_prot\".\"MTP_AnaManInt\".\"VFbk\""
+        },
+        "VInt": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Windgeschwindigkeit_in_prot\".\"MTP_AnaManInt\".\"VInt\""
+        },
+        "SrcChannel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Windgeschwindigkeit_in_prot\".\"MTP_AnaManInt\".\"SrcChannel\""
+        },
+        "SrcManAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Windgeschwindigkeit_in_prot\".\"MTP_AnaManInt\".\"SrcManAut\""
+        },
+        "SrcIntAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Windgeschwindigkeit_in_prot\".\"MTP_AnaManInt\".\"SrcIntAut\""
+        },
+        "SrcIntOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Windgeschwindigkeit_in_prot\".\"MTP_AnaManInt\".\"SrcIntOp\""
+        },
+        "SrcManOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Windgeschwindigkeit_in_prot\".\"MTP_AnaManInt\".\"SrcManOp\""
+        },
+        "SrcManAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Windgeschwindigkeit_in_prot\".\"MTP_AnaManInt\".\"SrcManAct\""
+        },
+        "SrcIntAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Windgeschwindigkeit_in_prot\".\"MTP_AnaManInt\".\"SrcIntAct\""
+        },
+        "WQC": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"Rec_Windgeschwindigkeit_in_prot\".\"MTP_AnaManInt\".\"WQC\""
+        }
+      }
+    },
+    {
+      "name": "H4002",
+      "type": "MTPDataObjectSUCLib/DataAssembly/ActiveElement/BinVlv",
+      "signals": {
+        "OSLevel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"OSLevel\""
+        },
+        "WQC": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"WQC\""
+        },
+        "StateChannel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"StateChannel\""
+        },
+        "StateOffAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"StateOffAut\""
+        },
+        "StateOpAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"StateOpAut\""
+        },
+        "StateAutAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"StateAutAut\""
+        },
+        "StateOffOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"StateOffOp\""
+        },
+        "StateOpOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"StateOpOp\""
+        },
+        "StateAutOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"StateAutOp\""
+        },
+        "StateOpAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"StateOpAct\""
+        },
+        "StateAutAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"StateAutAct\""
+        },
+        "StateOffAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"StateOffAct\""
+        },
+        "SafePosEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"SafePosEn\""
+        },
+        "SafePos": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"SafePos\""
+        },
+        "SafePosAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"SafePosAct\""
+        },
+        "OpenOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"OpenOp\""
+        },
+        "CloseOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"CloseOp\""
+        },
+        "OpenAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"OpenAut\""
+        },
+        "CloseAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"CloseAut\""
+        },
+        "Ctrl": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"Ctrl\""
+        },
+        "OpenFbkCalc": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"OpenFbkCalc\""
+        },
+        "CloseFbkCalc": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"CloseFbkCalc\""
+        },
+        "OpenFbk": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"OpenFbk\""
+        },
+        "CloseFbk": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"CloseFbk\""
+        },
+        "PermEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"PermEn\""
+        },
+        "Permit": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"Permit\""
+        },
+        "IntlEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"IntlEn\""
+        },
+        "Interlock": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"Interlock\""
+        },
+        "ProtEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"ProtEn\""
+        },
+        "Protect": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"Protect\""
+        },
+        "ResetOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"ResetOp\""
+        },
+        "ResetAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4002\".\"MTP_BinVlv\".\"ResetAut\""
+        }
+      }
+    },
+    {
+      "name": "H4001",
+      "type": "MTPDataObjectSUCLib/DataAssembly/ActiveElement/BinVlv",
+      "signals": {
+        "OSLevel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"OSLevel\""
+        },
+        "WQC": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"WQC\""
+        },
+        "StateChannel": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"StateChannel\""
+        },
+        "StateOffAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"StateOffAut\""
+        },
+        "StateOpAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"StateOpAut\""
+        },
+        "StateAutAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"StateAutAut\""
+        },
+        "StateOffOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"StateOffOp\""
+        },
+        "StateOpOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"StateOpOp\""
+        },
+        "StateAutOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"StateAutOp\""
+        },
+        "StateOpAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"StateOpAct\""
+        },
+        "StateAutAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"StateAutAct\""
+        },
+        "StateOffAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"StateOffAct\""
+        },
+        "SafePosEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"SafePosEn\""
+        },
+        "SafePos": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"SafePos\""
+        },
+        "SafePosAct": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"SafePosAct\""
+        },
+        "OpenOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"OpenOp\""
+        },
+        "CloseOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"CloseOp\""
+        },
+        "OpenAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"OpenAut\""
+        },
+        "CloseAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"CloseAut\""
+        },
+        "Ctrl": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"Ctrl\""
+        },
+        "OpenFbkCalc": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"OpenFbkCalc\""
+        },
+        "CloseFbkCalc": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"CloseFbkCalc\""
+        },
+        "OpenFbk": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"OpenFbk\""
+        },
+        "CloseFbk": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"CloseFbk\""
+        },
+        "PermEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"PermEn\""
+        },
+        "Permit": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"Permit\""
+        },
+        "IntlEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"IntlEn\""
+        },
+        "Interlock": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"Interlock\""
+        },
+        "ProtEn": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"ProtEn\""
+        },
+        "Protect": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"Protect\""
+        },
+        "ResetOp": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"ResetOp\""
+        },
+        "ResetAut": {
+          "server": "PNK_04_Elektrolyse_1",
+          "namespace": "http://www.siemens.com/simatic-s7-opcua",
+          "identifier": "\"H4001\".\"MTP_BinVlv\".\"ResetAut\""
+        }
+      }
+    }
+  ],
+  "services": "Service Count: 0",
+  "warnings": [
+    "Reference https://192.168.21.14 not found in items"
+  ]
 }
