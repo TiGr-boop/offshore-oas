@@ -1,6 +1,7 @@
 import zipfile
 from pathlib import Path
 
+
 def extract_mtp_files():
     """
     Extrahiert die Inhalte der MTP-Dateien. Vor allem interessant sind die manifest.aml-Dateien.

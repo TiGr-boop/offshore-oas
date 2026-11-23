@@ -2,6 +2,8 @@
 name = "offshore-oas"
 version = "0.0.1"
 dependencies = [
+    "chainlit>=0.1.0",
     "lxml",
+    "mcp[cli]>=2.3.0",
     "pathlib",
 ]
