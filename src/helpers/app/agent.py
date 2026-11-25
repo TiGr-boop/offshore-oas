@@ -40,7 +40,10 @@ class MTP_MCP_Toolbox:
         params = StdioServerParameters(
             command=sys.executable, args=[str(server_script_path)], cwd=project_root
         )
-        async with stdio_client(params) as (read, write), ClientSession(read, write) as session:
+        async with (
+            stdio_client(params) as (read, write),
+            ClientSession(read, write) as session,
+        ):
             await session.initialize()
             self.session = session
 
@@ -81,4 +84,3 @@ class MTP_MCP_Toolbox:
         if text:
             return text
         return json.dumps(response.model_dump(mode="json"), ensure_ascii=False)
-
