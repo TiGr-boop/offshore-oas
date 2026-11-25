@@ -2,10 +2,9 @@ import json
 from typing import Any
 
 import chainlit as cl
+from agent import SYSTEM_PROMPT, MTP_MCP_Toolbox
 from ollama import AsyncClient
 from openai import AsyncOpenAI
-
-from agent import MTP_MCP_Toolbox, SYSTEM_PROMPT
 
 OPENAI_API_KEY = ""
 OPENAI_MODEL_PREFIXES = ("gpt-", "o1-", "o3-", "o4-")
@@ -20,9 +19,7 @@ def is_openai_model(model: str) -> bool:
     return model.startswith(OPENAI_MODEL_PREFIXES)
 
 
-async def _run_tool(
-    toolbox: MTP_MCP_Toolbox, name: str, arguments: Any
-) -> str:
+async def _run_tool(toolbox: MTP_MCP_Toolbox, name: str, arguments: Any) -> str:
     try:
         parsed_arguments = (
             json.loads(arguments) if isinstance(arguments, str) else arguments
@@ -88,12 +85,8 @@ async def _stream_ollama(
 
         for tool_call in tool_calls:
             name = tool_call.function.name
-            result = await _run_tool(
-                toolbox, name, tool_call.function.arguments
-            )
-            messages.append(
-                {"role": "tool", "tool_name": name, "content": result}
-            )
+            result = await _run_tool(toolbox, name, tool_call.function.arguments)
+            messages.append({"role": "tool", "tool_name": name, "content": result})
 
 
 async def _stream_openai(
@@ -174,9 +167,7 @@ async def _stream_openai(
 
         for call in assistant_tool_calls:
             name = call["function"]["name"]
-            result = await _run_tool(
-                toolbox, name, call["function"]["arguments"]
-            )
+            result = await _run_tool(toolbox, name, call["function"]["arguments"])
             messages.append(
                 {
                     "role": "tool",

@@ -77,6 +77,23 @@ def list_modules() -> dict:
     }
 
 
+def list_data_assemblies(module: str) -> list[str]:
+    if not _cache:
+        load()
+    manifest = module_info(module)
+    data_assemblies = {
+        "data_assemblies": [d["name"] for d in manifest["data_assemblies"]]
+    }
+    return data_assemblies["data_assemblies"]
+
+def list_signals(module: str, da_name: str) -> list[str]:
+    if not _cache:
+        load()
+    manifest = module_info(module)
+    da = data_assembly_info(manifest, da_name)
+    return list(da["signals"])
+
+
 def module_overview(module_name: str) -> str:
     m = module_info(module_name)
     info = m["pea_info"]
@@ -146,9 +163,27 @@ def describe_data_assembly(module_name: str, da_name: str) -> dict:
     result = {
         "tag": d["name"],
         "type": type_details["name"],
-        "type_meaning": type_details,
         "family": type_details["family"],
         "signals": list(d["signals"]),
         "next": "Einzelnes Signal erklären: describe_signal. Alle Signale des Typs: describe_type.",
     }
     return result
+
+
+def describe_signal(module: str, da_name: str, signal: str) -> dict:
+    m = module_info(module)
+    d = data_assembly_info(m, da_name)
+    names = {s.lower(): s for s in d["signals"]}
+    key = names.get(signal.strip().lower())
+    if key is None:
+        raise ValueError(
+            f"Signal '{signal}' existiert bei {d['name']} nicht. "
+            f"Verfügbar: {', '.join(d['signals'])}"
+        )
+    signal_info = d["signals"][key]
+    return {
+        "data_assembly": d["name"],
+        "type": d["type"],
+        "signal": key,
+        "description": signal_info,
+    }
